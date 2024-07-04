@@ -1,0 +1,30 @@
+{
+  "name": "boilerplate-node-ts-express",
+  "version": "1.0.0",
+  "description": "tdd with express and typescript",
+  "author": "Antonio Espinoza",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.7",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.1.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
