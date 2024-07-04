@@ -1,7 +1,7 @@
 import express from 'express';
 
 export class Server {
-  
+
   private app = express();
 
   async start() {
@@ -12,5 +12,4 @@ export class Server {
     });
 
   }
-
 }
